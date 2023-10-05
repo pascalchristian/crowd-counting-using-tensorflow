@@ -1,9 +1,11 @@
 import numpy as np
-import tensorflow as tf
+#import tensorflow as tf
 import cv2
 import time
 import glob
 from progressbar import *
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 widgets = [Bar('>'), ' ', ETA(), ' ', ReverseBar('<')]
 pbar = ProgressBar(widgets=widgets, maxval=10000000)
